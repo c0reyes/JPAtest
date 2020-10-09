@@ -1,0 +1,29 @@
+GET http://localhost:8888/v1/car/test HTTP/1.1
+
+###
+
+GET http://localhost:8888/v1/car/brand HTTP/1.1
+
+###
+
+GET http://localhost:8888/v1/car/model HTTP/1.1
+
+###
+
+POST http://localhost:8888/v1/car/brand HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Toyota"
+}
+
+###
+
+POST http://localhost:8888/v1/car/model HTTP/1.1
+content-type: application/json
+
+{
+    "name": "supra",
+    "year": 2018,
+    "brand_id": 1
+}
