@@ -24,13 +24,16 @@ public class ModelServiceImpl implements ModelService {
 	}
 	
 	@Override
-	public void save(Model model) {
+	public Long save(Model model) {
 		Optional<Brand> brand = brandRepository.findById(model.getBrand_id());
 		
-		if(brand.isPresent())
+		if(brand.isPresent()) {
 			model.setBrand(brand.get());
+			Model m = modelRepository.save(model);
+			return m.getId();
+		}
 		
-		modelRepository.save(model);
+		return (long) -1;
 	}
 	
 	@Override

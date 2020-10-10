@@ -7,7 +7,7 @@ import java.util.Optional;
 public interface BrandService {
 	Iterable<Brand> findAll();
 	
-	void save(Brand brand);
+	Brand save(Brand brand);
 	
 	void delete(Brand brand);
 	

@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 @Entity
 @Table(name = "model")
@@ -27,7 +27,7 @@ public class Model {
     private Brand brand;
     
     @Transient
-    @JsonIgnore
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Long brand_id;
 
     public Long getId() {

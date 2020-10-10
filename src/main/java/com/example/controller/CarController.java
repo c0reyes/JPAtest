@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.model.Brand;
 import com.example.model.Model;
+import com.example.model.RepBase;
 import com.example.service.BrandServiceImpl;
 import com.example.service.ModelServiceImpl;
 
@@ -30,15 +32,14 @@ public class CarController {
 	}
 	
 	@PostMapping("/brand")
-	public @ResponseBody String setBrand(@RequestBody Brand brand) {
-		brandService.save(brand);
-		return "saved";
+	public ResponseEntity<RepBase> setBrand(@RequestBody Brand brand) {
+		return ResponseEntity.ok(new RepBase(brandService.save(brand)));
 	}
 	
 	@DeleteMapping("/brand")
-	public @ResponseBody String delBrand(@RequestBody Brand brand) {
+	public ResponseEntity<RepBase> delBrand(@RequestBody Brand brand) {
 		brandService.delete(brand);
-		return "deleted";
+		return ResponseEntity.ok(new RepBase());
 	}
 	
 	@GetMapping("/model")
@@ -47,14 +48,13 @@ public class CarController {
 	}
 	
 	@PostMapping("/model")
-	public @ResponseBody String setModel(@RequestBody Model model) {
-		modelService.save(model);
-		return "saved";
+	public ResponseEntity<RepBase> setModel(@RequestBody Model model) {
+		return ResponseEntity.ok(new RepBase(modelService.save(model)));
 	}
 	
 	@DeleteMapping("/model")
-	public @ResponseBody String delModel(@RequestBody Model model) {
+	public ResponseEntity<RepBase> delModel(@RequestBody Model model) {
 		modelService.delete(model);
-		return "deleted";
+		return ResponseEntity.ok(new RepBase());
 	}
 }

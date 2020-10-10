@@ -5,7 +5,7 @@ import com.example.model.Model;
 public interface ModelService {
 	Iterable<Model> findAll();
 	
-	void save(Model model);
+	Long save(Model model);
 	
 	void delete(Model model);
 }
