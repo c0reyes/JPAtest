@@ -50,4 +50,4 @@ Modify the server line to: server: https://kubernetes:8443
 
 - **/etc/hosts:** Add the line "127.0.0.1 jpatest.info"
 - **Open browser:** Go to http://jpatest.info:8000/v1/car/brand
-- **Other request in the file test.http**
+- **Other request in the test.http file**
