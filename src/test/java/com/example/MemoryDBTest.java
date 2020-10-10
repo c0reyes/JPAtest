@@ -32,7 +32,6 @@ public class MemoryDBTest {
 		
 		Optional<Brand> brandFind = brandRepository.findById((long)1);
 		assertTrue(brandFind.isPresent());
-		//assertEquals("toyota", brandFind.get().getName());
 	}
 	
 	@Test
@@ -51,6 +50,5 @@ public class MemoryDBTest {
 		
 		Optional<Model> modelFind = modelRepository.findById((long)1);
 		assertTrue(modelFind.isPresent());
-		//assertEquals("supra", modelFind.get().getName());
 	}
 }
