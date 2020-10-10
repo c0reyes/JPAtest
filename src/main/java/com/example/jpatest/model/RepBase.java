@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.jpatest.model;
 
 import java.util.Date;
 

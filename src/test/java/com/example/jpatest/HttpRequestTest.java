@@ -1,4 +1,4 @@
-package com.example;
+package com.example.jpatest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,8 +14,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
-import com.example.model.Brand;
-import com.example.model.Model;
+import com.example.jpatest.model.Brand;
+import com.example.jpatest.model.Model;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class HttpRequestTest {

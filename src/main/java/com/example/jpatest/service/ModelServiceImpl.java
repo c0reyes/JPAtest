@@ -1,14 +1,14 @@
-package com.example.service;
+package com.example.jpatest.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.Brand;
-import com.example.model.Model;
-import com.example.repository.BrandRepository;
-import com.example.repository.ModelRepository;
+import com.example.jpatest.model.Brand;
+import com.example.jpatest.model.Model;
+import com.example.jpatest.repository.BrandRepository;
+import com.example.jpatest.repository.ModelRepository;
 
 @Service
 public class ModelServiceImpl implements ModelService {

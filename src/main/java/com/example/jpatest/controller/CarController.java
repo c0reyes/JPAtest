@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.jpatest.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.model.Brand;
-import com.example.model.Model;
-import com.example.model.RepBase;
-import com.example.service.BrandServiceImpl;
-import com.example.service.ModelServiceImpl;
+import com.example.jpatest.model.Brand;
+import com.example.jpatest.model.Model;
+import com.example.jpatest.model.RepBase;
+import com.example.jpatest.service.BrandServiceImpl;
+import com.example.jpatest.service.ModelServiceImpl;
 
 @RestController
 @RequestMapping("/v1/car")

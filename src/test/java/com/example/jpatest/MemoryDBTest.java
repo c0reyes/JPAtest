@@ -1,6 +1,5 @@
-package com.example;
+package com.example.jpatest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Optional;
@@ -10,10 +9,10 @@ import javax.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.model.Brand;
-import com.example.model.Model;
-import com.example.repository.BrandRepository;
-import com.example.repository.ModelRepository;
+import com.example.jpatest.model.Brand;
+import com.example.jpatest.model.Model;
+import com.example.jpatest.repository.BrandRepository;
+import com.example.jpatest.repository.ModelRepository;
 
 @SpringBootTest
 public class MemoryDBTest {
