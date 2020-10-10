@@ -48,5 +48,5 @@ spec:
     spec:
       containers:
       - name: jpatest
-        image: host.minikube.internal:5000/jpatest/latest
+        image: host.minikube.internal:5000/jpatest
         imagePullPolicy: Always
