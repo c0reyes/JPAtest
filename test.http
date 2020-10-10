@@ -21,8 +21,8 @@ content-type: application/json
 
 {
     "name": "celica",
-    "year": 1990,
-    "brand_id": 10
+    "year": 1992,
+    "brand_id": 1
 }
 
 ###
@@ -31,5 +31,5 @@ DELETE http://localhost:8888/v1/car/model HTTP/1.1
 content-type: application/json
 
 {
-    "id": 2
+    "id": 3
 }
