@@ -43,7 +43,7 @@ Modify the server line to: server: https://kubernetes:8443
     - Add Credentials
         - **Kind:** Secret file
         - **File:** (upload kubeconfig.txt file)
-        - **ID:** name
+        - **ID:** kubeconfig
         - **Description:** optional
 
 ## Test
