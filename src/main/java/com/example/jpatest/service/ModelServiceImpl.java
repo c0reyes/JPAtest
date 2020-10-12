@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.jpatest.exception.NotFoundException;
 import com.example.jpatest.model.Brand;
 import com.example.jpatest.model.Model;
 import com.example.jpatest.repository.BrandRepository;
@@ -33,11 +34,12 @@ public class ModelServiceImpl implements ModelService {
 			return m.getId();
 		}
 		
-		return (long) -1;
+		throw new NotFoundException("Brand not found");
 	}
 	
 	@Override
 	public void delete(Model model) {
+		if(!modelRepository.existsById(model.getId())) throw new NotFoundException("Model not found");
 		modelRepository.deleteById(model.getId());
 	}
 }
