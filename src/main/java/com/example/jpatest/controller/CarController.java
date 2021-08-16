@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.jpatest.model.Brand;
-import com.example.jpatest.model.Model;
-import com.example.jpatest.model.RepBase;
+import com.example.jpatest.entity.Brand;
+import com.example.jpatest.entity.Model;
+import com.example.jpatest.entity.RepBase;
 import com.example.jpatest.service.BrandServiceImpl;
 import com.example.jpatest.service.ModelServiceImpl;
 

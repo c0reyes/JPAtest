@@ -2,7 +2,7 @@ package com.example.jpatest.service;
 
 import java.util.Optional;
 
-import com.example.jpatest.model.Brand;
+import com.example.jpatest.entity.Brand;
 
 public interface BrandService {
 	Iterable<Brand> findAll();

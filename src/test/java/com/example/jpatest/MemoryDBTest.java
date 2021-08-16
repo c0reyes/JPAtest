@@ -9,8 +9,8 @@ import javax.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.jpatest.model.Brand;
-import com.example.jpatest.model.Model;
+import com.example.jpatest.entity.Brand;
+import com.example.jpatest.entity.Model;
 import com.example.jpatest.repository.BrandRepository;
 import com.example.jpatest.repository.ModelRepository;
 

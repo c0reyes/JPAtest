@@ -5,9 +5,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.jpatest.entity.Brand;
+import com.example.jpatest.entity.Model;
 import com.example.jpatest.exception.NotFoundException;
-import com.example.jpatest.model.Brand;
-import com.example.jpatest.model.Model;
 import com.example.jpatest.repository.BrandRepository;
 import com.example.jpatest.repository.ModelRepository;
 

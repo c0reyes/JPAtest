@@ -1,6 +1,6 @@
 package com.example.jpatest.service;
 
-import com.example.jpatest.model.Model;
+import com.example.jpatest.entity.Model;
 
 public interface ModelService {
 	Iterable<Model> findAll();

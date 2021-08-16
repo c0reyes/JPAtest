@@ -14,8 +14,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
-import com.example.jpatest.model.Brand;
-import com.example.jpatest.model.Model;
+import com.example.jpatest.entity.Brand;
+import com.example.jpatest.entity.Model;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class HttpRequestTest {

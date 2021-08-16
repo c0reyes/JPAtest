@@ -1,4 +1,4 @@
-package com.example.jpatest.model;
+package com.example.jpatest.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
